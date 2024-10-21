@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--METADATOS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso UNET</title>
+    <!--FAVICON PARA EL LOGO DE LA PESTAÑA-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!--FUENTES UTILIZADA PARA UN TEXTO MAS BONITO-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--ESTE JS ES PARA LOS ICONOS QUE ESTAN EN SERVICIOS-->
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <!--ESTILOS CSS Y FRAMEWORKS-->
+    <link rel="stylesheet" href="css/bootstrap.css ">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+        <div class="contenido-navegacion">
+            <div class="logo">
+                <h2>Desarrollo <span>Creativo</span></h2>
+            </div>
+
+            <nav class="navegacion ocultar">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#api">API</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="hamburguesa">
+                <!--ESTOS SPAN SON LAS RAYITAS DEL BOTON HAMBURGUESA
+                HAY 3 SPAN 3 RAYITAS-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="contenido-header">
+            <div class="contenedor-header">
+                <div class="texto-header">
+                    <center>
+                        <h2>¡Bienvenido a 
+                        <br>
+                        Desarrollo Creativo!
+                        </h2>
+                    </center>
+                </div>
+                <video autoplay loop muted>
+                    <source src="img/video1.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    <br>
+   <section id="nosotros">
+    <br>
+    <div class="nosotros-caracteristicas" >
+        <center>
+            <h2>
+                Nosotros somos Desarrollo Creativo, una empresa que se caracteriza 
+                <br>
+                por brindar servicios de gran calidad!
+            </h2>
+            <br><br><br>
+        </center>
+        <div class="contenido-nosotros-caracteristicas contenedor">
+            
+            <div class="nosotros-caracteristica">
+               
+                <i class="fas fa-clock"></i>
+                <br><br>
+                <h3>Entregas puntuales</h3>
+                <br>
+                <p>Cumplimos con los plazos establecidos, sin comprometer la calidad, adaptamos nuestros trabajos a tus necesidades y plazos.
+                </p>
+            </div>
+            <div class="nosotros-caracteristica">
+                <i class="fas fa-paint-brush"></i>
+                <br><br>
+                <h3>Diseños innovadores</h3>
+                <br>
+                <p> Creamos interfaces modernas y atractivas que cautivarán a tus usuarios y faciles de usar 
+                </p>
+            </div>
+            <div class="nosotros-caracteristica">
+                <i class="fas fa-code"></i>
+                <br><br>
+                <h3>Software de calidad</h3>
+                <br>
+                <p>Desarrollamos aplicaciones sólidas y eficientes que superarán tus expectativas que se ajusta a las necesidades de tu empresa
+                </p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+ 
+
+    <section class="servicios contenedor" id="servicios">
+        <h2>Servicios</h2>
+        <div class="contenido-servicios">
+            <div class="servicio">
+                <i class="fas fa-headphones-alt"></i>
+                <h3>Soporte Tecnico</h3>
+                <br>
+                <p>Ofrecemos un servicio tecnico altamente calificado las 24 horas del dia.</p>
+             </div>
+            <div class="servicio">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Desarrollo movil y web</h3>
+                <br>
+                <p>Desarrollamos aplicaciones moviles tanto para Android como iOS y Web responsivas que se adaptan a cualquier dispositivo de manera fluida.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-cogs"></i>
+                <h3>Software personalizable</h3>
+                <br>
+                <p>El software se hace a gusto del usuario para poder cumplir con los requerimientos y expectativas del cliente solucionando sus problemas.</p>
+            </div>
+        </div>
+    </section>
+    <!--ESTE CODIGO ES EL CARROUSEL EL CUAL ES IMPLEMENTADO CON BOOTSTRAP-->
+    <section class="trabajos contenedor" id="trabajos">
+        <br>
+        <center><h2>Nuestros trabajos</h2></center>
+        <div id="testimoniosdiv" class="container-centered"class="trabajos-recientes d-flex flex-column text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card2">
+                        <div class="card-body">
+              
+                     
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <picture>
+                                            <img class="testimonio-imagen" src="img/img1.png">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <img class="testimonio-imagen" src="img/img2.png">
+                                        </picture>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <picture>
+                                            <img class="testimonio-imagen" src="img/img3.png">
+                                        </picture>
+                                    </div>
+                                </div>
+                            
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--API DE MARVEL-->
+    <section class="trabajos contenedor" id="api">
+        <br><br>
+        <center>
+            <div class="container">
+                <h2 class="text-center">API LISTAS DE PERSONAJES DE MARVEL</h2>
+                <div class="class row" id="marvel-row"></div>
+            </div>
+        </center>
+        
+    </section>
+    <section class="contacto" id="contacto">
+        <h2>Contactanos</h2>
+        <div class="contenido-contacto">
+            <div class="informacion-contacto">
+                <p>desarrollo@creativo.com</p>
+                <p>+58 4153154351</p>
+            </div>
+            <form class="formulario-contacto">
+                <div class="input-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Roberto Jimenez">
+                </div>
+                <div class="input-contacto">
+                    <label for="correo">Correo</label>
+                    <input type="text" id="correo" placeholder="jimenez@ejemplo.com">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" placeholder="1518315315">
+                </div>
+                <div class="input-contacto">
+                    <label for="telefono">Mensaje</label>
+                    <textarea placeholder="Cotizacion"></textarea>
+                </div>
+                <div class="input-contacto">
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="logo">
+            <h2>Desarrollo <span>Creativo</span></h2>
+        </div>
+        <!--EN ESTE SPAN FECHA SE APLICA EL CODIGO JS QUE INDICA EL AÑO ACTUAL-->
+        <p>Todos los derechos reservados <span class="fecha"></span> <br> &copy; Desarrollado por Jesus Medina</p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
